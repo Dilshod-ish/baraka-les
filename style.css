@@ -1,162 +1,212 @@
 :root {
-    --green: #7ab63d;
-    --dark: #0a0a0a;
-    --text-dark: #222;
-    --bg-light: #ffffff;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial, Helvetica, sans-serif; color: var(--text-dark); background: var(--bg-light); }
-  a { text-decoration: none; color: #fff; }
+      --green: #7ab63d;
+      --dark: #0a0a0a;
+      --text-dark: #222;
+      --bg-light: #ffffff;
+    }
 
-  header {
-    background: var(--dark);
-    padding: 18px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .brend {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  .brend img {
-    height: 42px;
-    border-radius: 50%;
-  }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text-dark);
+      background: var(--bg-light);
+    }
 
-  nav { display: flex; gap: 30px; align-items: center; }
-  nav a { font-weight: 600; }
-  nav .qidiruv { font-size: 20px; cursor: pointer; }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
 
-  .qahramon {
-    position: relative;
-    height: 950px;
-    display: flex;
-    background: url("computr.png") center/cover no-repeat;
-    align-items: center;
-    color: #0a0a0a;
-  }
-  .qahramon::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.35);
-  }
-  .qahramon-mazmun {
-    position: relative;
-    padding: 0 60px;
-    max-width: 600px;
-  }
-  .qahramon h1 {
-    font-size: 64px;
-    line-height: 1.05;
-    font-weight: 800;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-  }
-  .tugma {
-    display: inline-block;
-    background: black;
-    border: none;
-    padding: 14px 36px;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-  }
+    header {
+      background: var(--dark);
+    }
 
-  .katalog {
-    padding: 60px 40px;
-  }
-  .katalog h2 {
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 40px;
-    font-weight: 700;
-  }
-  .panjara {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 24px;
-  }
-  .panjara img {
-    width: 400%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  }
+    .navbar-brand img {
+      height: 42px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
 
-  @media (max-width: 600px) {
-    .qahramon { height: 340px; }
-    .qahramon h1 { font-size: 42px; }
-    nav { gap: 16px; }
-    nav a { font-size: 14px; }
-  }
-  .xususiyatlar {
-    background: #f6fbf7;
-    padding: 60px 40px;
-  }
-  .xususiyatlar h2 {
-    color: #0a0a0a;
-    font-size: 32px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .xususiyat-royxat {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-  .xususiyat {
-    background: #fff;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  .xususiyat img {
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  .xususiyat h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #2e7d32;
-  }
-  footer {
-    background: #0a0a0a;
-    color: #fff;
-    padding: 40px 20px;
-  }
-  footer h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: var(--green);
-  }
-  footer p, footer a {
-    font-size: 14px;
-    color: #ddd;
-    margin-bottom: 8px;
-  }
-  footer a:hover {
-    color: #7ab63d;
-    text-decoration: underline;
-  }
+    .navbar-brand span {
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+    }
 
-  #catalog-slider {
-    max-width: 1100px;
-    margin: 0 auto 60px auto;
-  }
-  #catalog-slider img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-  }
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      color: #fff !important;
+    }
+
+    .qahramon {
+      position: relative;
+      height: 600px;
+      display: flex;
+      background: url(computr.png) center/cover no-repeat;
+      align-items: center;
+      color: #fff;
+    }
+
+    .qahramon::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+    }
+
+    .qahramon-mazmun {
+      position: relative;
+      padding: 0 30px;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .qahramon h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .tugma {
+      background: var(--green);
+      border: none;
+      padding: 14px 36px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .tugma:hover {
+      background: #5e8c2d;
+    }
+
+    .katalog {
+      padding: 60px 20px;
+    }
+
+    .katalog h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .panjara {
+      display: grid;
+      gap: 20px;
+    }
+
+    .panjara img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .xususiyatlar {
+      background: #f6fbf7;
+      padding: 60px 20px;
+    }
+
+    .xususiyatlar h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .xususiyat-royxat {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .xususiyat {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .xususiyat h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: var(--green);
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    footer h5 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--green);
+    }
+
+    footer p,
+    footer a {
+      font-size: 14px;
+      color: #ddd;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVENESS */
+
+    @media (max-width: 575.98px) {
+      .panjara {
+        grid-template-columns: 1fr;
+      }
+
+      .qahramon h1 {
+        font-size: 28px;
+      }
+
+      .tugma {
+        font-size: 14px;
+        padding: 10px 24px;
+      }
+
+      .katalog h2 {
+        font-size: 24px;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 1023.98px) {
+      .panjara {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .qahramon h1 {
+        font-size: 36px;
+      }
+      .xususiyat-royxat {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .panjara {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .qahramon h1 {
+        font-size: 48px;
+      }
+      .xususiyat-royxat {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
