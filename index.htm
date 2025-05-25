@@ -8,100 +8,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="sticky-top">
-      <div class="brend">
-        <img src="logo.jpg" alt="BARAKA LES" />
+    <!-- NAVIGATION -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.jpg" alt="Logo" />
         <span>BARAKA LES</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Bosh sahifa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#katalog">Katalog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tovar">Tovar-haqida</a></li>
+          <li class="nav-item"><a class="nav-link" href="#haqida">Biz haqimizda</a></li>
+        </ul>
       </div>
-  
-      <nav>
-        <a href="#"> Bosh sahifa </a>
-        <a href="#katalog"> Katalog </a>
-        <a href="#tovar"> Tovar-haqida </a>
-        <a href="#haqida"> Biz haqimizda </a>
-        <span class="qidiruv">&#128269;</span>
-      </nav>
-    </header>
-  
-    <section class="qahramon">
-      <div class="qahramon-mazmun">
-        <button class="tugma"> Xarid qilish </button>
-      </div>
-    </section>
-  
-      <section id="katalog" class="katalog">
-      <h2> Katalog </h2>
-      <div class="panjara">
-          <div class="col-3">
-              <img src="wood1.png" alt="Yog‘och bo‘laklari">
-              <img src="wood2.png" alt="Quruq taxtalar">
-          </div>
-          <div class="col-3">
-              <img src="wood3.png" alt="Taxta ombori">
-              <img src="wood4.png" alt="Yog‘och materiallari">
-          </div>
-          <div class="col-3">
-              <img src="wood5.png" alt="Devor paneli">
-              <img src="wood6.png" alt="Yog‘och poddon">
-          </div>
-          <div class="col-3">
-              <img src="wood7.png" alt="Kesilgan bruslar">
-              <img src="wood8.png" alt="Yog‘och polenlar">
-          </div>
-      </div>
-    </section>
-  
-    <section class="xususiyatlar" id="tovar">
-      <h2> Tovarlar haqida </h2>
-      <div class="xususiyat-royxat">
-        <div class="xususiyat">
-          <h3>Yuqori sifatli yog‘och</h3>
-          <p>Faqat ishonchli o‘rmonlardan olingan, mustahkam va chidamli mahsulotlar.</p>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="qahramon">
+    <div class="qahramon-mazmun">
+      <h1>BARAKA LES</h1>
+      <button class="tugma">Xarid qilish</button>
+    </div>
+  </section>
+
+  <!-- KATALOG -->
+  <section id="katalog" class="katalog">
+    <h2>Katalog</h2>
+    <div class="panjara">
+      <img src="wood1.png" alt="Yog‘och bo‘laklari" />
+      <img src="wood2.png" alt="Quruq taxtalar" />
+      <img src="wood3.png" alt="Taxta ombori" />
+      <img src="wood4.png" alt="Yog‘och materiallari" />
+      <img src="wood5.png" alt="Devor paneli" />
+      <img src="wood6.png" alt="Yog‘och poddon" />
+      <img src="wood7.png" alt="Kesilgan bruslar" />
+      <img src="wood8.png" alt="Yog‘och polenlar" />
+    </div>
+  </section>
+
+  <!-- TOVAR XUSUSIYATLARI -->
+  <section class="xususiyatlar" id="tovar">
+    <h2>Tovarlar haqida</h2>
+    <div class="xususiyat-royxat">
+      <div class="xususiyat"><h3>Yuqori sifatli yog‘och</h3><p>Faqat ishonchli o‘rmonlardan olingan.</p></div>
+      <div class="xususiyat"><h3>Tez yetkazib berish</h3><p>Butun hudud bo‘ylab ishonchli yetkazamiz.</p></div>
+      <div class="xususiyat"><h3>Keng tanlov</h3><p>Turli o‘lcham va ko‘rinishdagi yog‘ochlar mavjud.</p></div>
+      <div class="xususiyat"><h3>Adolatli narxlar</h3><p>Sifatga mos narxlar bilan xizmat ko‘rsatamiz.</p></div>
+      <div class="xususiyat"><h3>Maxsus o‘lchamlar</h3><p>Buyurtmaga binoan kesib beramiz.</p></div>
+      <div class="xususiyat"><h3>Ishonchli hamkorlik</h3><p>Quruvchilar orasida ishonchli nomga egamiz.</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="haqida">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5>BARAKA LES</h5>
+          <p>2025-yil may oyida yaratildi</p>
         </div>
-        <div class="xususiyat">
-          <h3>Tez yetkazib berish</h3>
-          <p>Butun hudud bo‘ylab tez va ishonchli yetkazib beramiz.</p>
+        <div class="col-md-4 mb-4">
+          <h5>Aloqa</h5>
+          <p>📞 +998 90 123 45 67</p>
+          <p><a href="mailto:info@barakales.uz">📧 info@barakales.uz</a></p>
         </div>
-        <div class="xususiyat">
-          <h3>Keng tanlov</h3>
-          <p>Turli o‘lchamdagi yog‘ochlar va stol turlari mavjud.</p>
-        </div>
-        <div class="xususiyat">
-          <h3>Adolatli narxlar</h3>
-          <p>Sifatli mahsulotlar uchun qulay narxlar taklif etamiz.</p>
-        </div>
-        <div class="xususiyat">
-          <h3>Maxsus o‘lchamlar</h3>
-          <p>Buyurtmangizga mos ravishda kesib beramiz.</p>
-        </div>
-        <div class="xususiyat">
-          <h3>Ishonchli hamkorlik</h3>
-          <p>Quruvchilar va ustalar orasida ishonchli nomga egamiz.</p>
-        </div>
-      </div>
-    </section>
-  
-    <footer id="haqida">
-      <div class="container">
-        <div class="row text-center text-md-start">
-          <div class="col-md-4 mb-4">
-            <h5> BARAKA LES </h5>
-            <p> 2025-yil may oyida yaratildi </p>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5>Aloqa</h5>
-            <p title="qo'ng'riq qilish">📞 +998 90 123 45 67</p>
-            <p><a href="#">📧 info@barakales.uz</a></p>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5>Ijtimoiy tarmoqlar</h5>
-            <p><a href="#">Instagram</a></p>
-            <p><a href="#">Telegram</a></p>
-            <p><a href="#">Facebook</a></p>
-          </div>
+        <div class="col-md-4 mb-4">
+          <h5>Ijtimoiy tarmoqlar</h5>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">Telegram</a></p>
+          <p><a href="#">Facebook</a></p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
